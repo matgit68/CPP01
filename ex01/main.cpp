@@ -1,5 +1,5 @@
 #include "Zombie.hpp"
-#define N 5
+#define N 15
 int	main(void) {
 	Zombie z1 = Zombie("Titi");
 	Zombie *h;
