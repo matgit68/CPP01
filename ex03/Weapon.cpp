@@ -1,7 +1,7 @@
 #include "Weapon.hpp"
 
 Weapon::Weapon(void) {
-	this->type = "";
+	this->type = "bare hands";
 }
 
 Weapon::Weapon(std::string type) {
