@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mamat <mamat@student.42.fr>                +#+  +:+       +#+         #
+#    By: mdjemaa <mdjemaa@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/06 22:27:24 by mamat             #+#    #+#              #
-#    Updated: 2023/09/07 13:34:08 by mamat            ###   ########.fr        #
+#    Updated: 2023/09/28 18:34:03 by mdjemaa          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ CYAN	:= \033[36;1m
 WHITE	:= \033[37;1m
 RESET	:= \033[0m
 
-NAME := main
+NAME := ex02
 
 CC := c++
 CFLAGS := -Wall -Wextra -Werror -g
