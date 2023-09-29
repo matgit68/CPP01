@@ -9,14 +9,12 @@ int replace(std::string infile, std::string s1, std::string s2) {
 	std::string		tmp, str;
 
 	in.open(infile.c_str());
-	std::cout << infile << std::endl;
 	if (in.fail())
 	{
 		std::cout << infile << " could not be read" << std::endl;
 		return (1);
 	}
 	infile.append(".replace");
-	std::cout << infile << std::endl;
 	out.open(infile.c_str());
 	if (out.fail())
 	{
