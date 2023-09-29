@@ -8,14 +8,16 @@ int replace(std::string infile, std::string s1, std::string s2) {
 	std::ofstream	out;
 	std::string		tmp, str;
 
-	in.open(infile);
+	in.open(infile.c_str());
+	std::cout << infile << std::endl;
 	if (in.fail())
 	{
 		std::cout << infile << " could not be read" << std::endl;
 		return (1);
 	}
 	infile.append(".replace");
-	out.open(infile);
+	std::cout << infile << std::endl;
+	out.open(infile.c_str());
 	if (out.fail())
 	{
 		std::cout << infile << " could not be created" << std::endl;
@@ -24,10 +26,10 @@ int replace(std::string infile, std::string s1, std::string s2) {
 	while (!in.eof()) {
 		getline(in, tmp);
 		str += tmp;
+		str.append("\n");
 	}
 	in.close();
-//	std::cout << str << std::endl;
-	while (pos = str.find(s1))
+	while ((pos = str.find(s1)))
 	{
 		if (pos == -1)
 			break;

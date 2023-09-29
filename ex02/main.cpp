@@ -9,6 +9,7 @@ int	main(void) {
 	std::cout << "Adresse de str \t\t " << &str << std::endl;
 	std::cout << "Adresse stockée dans PTR " << stringPTR << std::endl;
 	std::cout << "Adresse stockée dans REF " << &stringREF << std::endl << std::endl;
+
 	std::cout << "Valeur de str \t\t" << str << std::endl;
 	std::cout << "Valeur pointée par *PTR " << *stringPTR << std::endl;
 	std::cout << "Valeur pointée par REF  " << stringREF << std::endl;
